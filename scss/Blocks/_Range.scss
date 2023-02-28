@@ -4,18 +4,42 @@
   @media screen and (max-width: 360px) {
     padding-left: 20px;
   }
-  h2 {
-    display: flex;
-    justify-content: center;
-    @extend %playnormal;
-    color: #1B1A17;
-    padding: 65px 0;
-    @media screen and (max-width: 360px) {
-      font-size: 24px;
-      justify-content: start;
-      padding: 30px 0;
+  div {
+    h2 {
+      display: flex;
+      justify-content: center;
+      @extend %playnormal;
+      color: #1B1A17;
+      padding: 65px 0;
+      @media screen and (max-width: 360px) {
+        font-size: 24px;
+        justify-content: start;
+        padding: 30px 0;
+      }
+    }
+    a{
+      @extend %robotomedium;
+      position: relative;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #444240;
+      margin-left: 1170px;
+    }
+    a:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 90%;
+      left: 5px;
+      top: 20px;
+      border: 1px solid #C4C0B6;
+    }
+    a:hover {
+      color:red
     }
   }
+  
   .block {
     display: flex;
     margin: 0px -27px;
@@ -78,6 +102,9 @@
           font-size: 16px;
           line-height: 21px;
           color: #1B1A17;
+        }
+        a:hover {
+          color: red;
         }
         a:before {
           content: "";

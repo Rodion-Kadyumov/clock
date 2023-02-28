@@ -80,9 +80,28 @@
         width: 250px;
       }
     }
+    button:hover {
+      box-shadow: 0 0 20px #444240, 0 0 40px #444240,0 0 80px #444240;
+    }
   }
   .right {
     position: relative;
+    p {
+      @extend %pratanormal;
+      color: #1B1A17;
+    }
+    &__price {
+      position: absolute;
+      width: 10vw;
+      top: 130px;
+      left: 100px;
+    }
+    &__dia {
+      position: absolute;
+      width: 10vw;
+      left: 500px;
+      bottom: 100px;
+    }
     .bg {
       position: absolute;
       left: -60px
