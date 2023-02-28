@@ -1,0 +1,59 @@
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 6vw;
+  @media screen and (max-width: 360px) {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) ;
+  }
+  @media screen and (max-width: 360px) {
+    padding: 20px;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 360px) {
+      padding: 10px;
+      div:last-child {
+        padding: 0;
+      }
+    }
+    img {
+      margin-right: 5px;
+    }
+    a {
+      @extend %robotonormal;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 16px;
+      color: #555248;
+      margin-right: 65px;
+      @media screen and (max-width: 360px) {
+        margin-right: 30px;
+      }
+    }
+    a:last-child {
+      margin: 0;
+    }
+    a:hover {
+      color: red;
+    }
+  }
+  .link {
+    img {
+      cursor: pointer;
+      margin-right: 20px;
+      @media screen and (max-width: 360px) {
+        margin-right: 120px;
+      }
+    }
+    img:last-child {
+      margin: 0;
+    }
+    img:hover {
+      color: red;
+    }
+  }
+}

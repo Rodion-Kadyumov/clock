@@ -1,0 +1,77 @@
+.about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @media screen and (max-width: 360px) {
+    display: flex;
+  }
+  &__left {
+    grid-column: 1/2;
+    background: #F7F5EF;
+    position: relative;
+    @media screen and (max-width: 360px) {
+      display: none;
+    }
+    img {
+      position: absolute;
+      top: 50px;
+      left: 170px;
+      @media screen and (max-width: 820px) {
+        width: 100%;
+        top: 40px;
+        left: 0;
+      }
+    }
+  }
+  &__right {
+    grid-column: 2/4;
+    padding: 140px 290px;
+    position: relative;
+    @media screen and (max-width: 820px) {
+      padding: 30px;
+    }
+    h2 {
+      @extend %playnormal;
+      color: #1B1A17;
+      @media screen and (max-width: 360px) {
+        font-size: 24px;
+      }
+    }
+    p {
+      @extend %robotonormal;
+      font-size: 16px;
+      line-height: 150%;
+      color: #444240;
+      padding: 40px 0px;
+      @media screen and (max-width: 360px) {
+        width: 80vw;
+      }
+    }
+    button {
+      width: 205px;
+      height: 64px;
+      background: #D4B098;
+      @extend %robotomedium;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      @media screen and (max-width: 360px) {
+        width: 300px;
+      }
+    }
+    button:hover {
+      box-shadow: 0 0 20px #D4B098, 0 0 40px #D4B098, 0 0 80px #D4B098;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      @media screen and (max-width: 360px) {
+        display: none;
+      }
+    }
+    img:last-child {
+      @media screen and (max-width: 820px) {
+        display: none;
+      }
+    }
+  }
+}
