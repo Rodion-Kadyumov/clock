@@ -4,27 +4,20 @@
   @media screen and (max-width: 360px) {
     padding-left: 20px;
   }
-  div {
-    h2 {
-      display: flex;
-      justify-content: center;
-      @extend %playnormal;
-      color: #1B1A17;
-      padding: 65px 0;
-      @media screen and (max-width: 360px) {
-        font-size: 24px;
-        justify-content: start;
-        padding: 30px 0;
-      }
-    }
-    a{
+  &__whatch {
+    a {
       @extend %robotomedium;
       position: relative;
-      font-weight: 500;
       font-size: 16px;
       line-height: 19px;
       color: #444240;
       margin-left: 1170px;
+      @media screen and (max-width:820px) {
+        margin-left: 700px;
+      }
+      @media screen and (max-width:360px) {
+        margin-left: 220px;
+      }
     }
     a:before {
       content: '';
@@ -39,7 +32,24 @@
       color:red
     }
   }
-  
+  div {
+    h2 {
+      display: flex;
+      justify-content: center;
+      @extend %playnormal;
+      color: #1B1A17;
+      padding: 65px 0;
+      @media screen and (max-width: 820px) {
+        padding: 65px 100px;
+        justify-content: start;
+      }
+      @media screen and (max-width: 360px) {
+        font-size: 24px;
+        justify-content: start;
+        padding: 30px 0;
+      }
+    }
+  }
   .block {
     display: flex;
     margin: 0px -27px;

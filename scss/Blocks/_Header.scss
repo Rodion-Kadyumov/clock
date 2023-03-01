@@ -1,27 +1,27 @@
-header {
+.header {
   grid-area: header;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 36px 6vw;
+  @media screen and (max-width: 820px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1080px;
+  }
   @media screen and (max-width: 360px) {
     display: grid;
-    grid-template-rows: repeat(2, 1fr) ;
-  }
-  @media screen and (max-width: 360px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     padding: 20px;
   }
-  div {
+  &__logo {
     display: flex;
     align-items: center;
+  }
+  &__nav {
     @media screen and (max-width: 360px) {
-      padding: 10px;
-      div:last-child {
-        padding: 0;
-      }
-    }
-    img {
-      margin-right: 5px;
+      padding: 10px 0;
     }
     a {
       @extend %robotonormal;
@@ -29,6 +29,9 @@ header {
       position: relative;
       color: #555248;
       margin-right: 65px;
+      @media screen and (max-width: 820px) {
+        margin-right: 30px;
+      }
       @media screen and (max-width: 360px) {
         margin-right: 30px;
       }
@@ -54,7 +57,7 @@ header {
       left: 0;
     }
   }
-  .link {
+  &__link {
     img {
       cursor: pointer;
       margin-right: 20px;
