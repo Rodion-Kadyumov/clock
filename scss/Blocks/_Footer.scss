@@ -5,6 +5,7 @@ footer {
   grid-area: footer;
   padding: 67px 185px;
   @media screen and (max-width:820px) {
+    width: 100vw;
     padding: 67px 30px;
   }
   @media screen and (max-width: 360px) {

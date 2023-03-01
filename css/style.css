@@ -592,7 +592,7 @@ header .link img:hover {
   .network {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    padding: 30;
+    padding: 100px 40px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -608,7 +608,7 @@ header .link img:hover {
 @media screen and (max-width: 820px) {
   .network__left {
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     padding: 0;
   }
 }
@@ -634,6 +634,7 @@ header .link img:hover {
 @media screen and (max-width: 820px) {
   .network__left p {
     width: 50vw;
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -645,6 +646,11 @@ header .link img:hover {
 .network__left img {
   cursor: pointer;
   margin-right: 20px;
+}
+@media screen and (max-width: 820px) {
+  .network__left img {
+    padding-bottom: 40px;
+  }
 }
 @media screen and (max-width: 360px) {
   .network__left img {
@@ -672,6 +678,11 @@ header .link img:hover {
   gap: 10px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+}
+@media screen and (max-width: 820px) {
+  .network__right {
+    width: 90vw;
+  }
 }
 .network__right .gallery {
   position: relative;
@@ -707,6 +718,7 @@ footer {
 }
 @media screen and (max-width: 820px) {
   footer {
+    width: 100vw;
     padding: 67px 30px;
   }
 }
