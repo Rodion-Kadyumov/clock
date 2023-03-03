@@ -1,14 +1,15 @@
 .banner {
   display: flex;
+  height: 768px;
+  @media screen and (max-width: 360px) {
+    height: 300px;
+  }
   .left {
     display: flex;
     flex-direction: column;
-    padding: 230px 0px 230px 180px;
-    @media screen and (max-width: 820px) {
-      padding: 230px 0px 230px 50px;
-    }
+    padding: 230px 0px 230px 50px;
     @media screen and (max-width: 360px) {
-      padding: 0px 50px;
+      padding: 0px;
     }
     h1 {
       @extend %playnormal;
@@ -35,7 +36,6 @@
     }
     div {
       flex: 1 1 auto;
-      padding-left: 50px;
       @media screen and (max-width: 360px) {
         padding: 0;
       }
@@ -44,7 +44,6 @@
         font-size: 30px;
         line-height: 40px;
         color: #1B1A17;
-        margin-bottom: 40px;
         @media screen and (max-width: 360px) {
           font-size: 22px;
           margin-bottom: 20px;
@@ -55,8 +54,8 @@
         line-height: 21px;
         color: rgba(27, 26, 23, 0.82);
         width: 12.5vw;
-        margin-bottom: 60px;
-        @media screen and (max-width: 820px) {
+        margin-left: 50px;
+        @media screen and (max-width: 991px) {
           width: 30vw;
         }
         @media screen and (max-width: 360px) {
@@ -76,7 +75,7 @@
       color: #FFFFFF;
       margin-left: 50px;
       @media screen and (max-width: 360px) {
-        margin: 0;
+        margin: 0 0 0 50px;
         width: 250px;
       }
     }
@@ -93,24 +92,30 @@
     &__price {
       position: absolute;
       width: 10vw;
-      top: 130px;
-      left: 100px;
+      top: 110px;
+      left: 200px;
+      @media screen and (max-width: 991px) {
+        left: 80px;
+      }
     }
     &__dia {
       position: absolute;
       width: 10vw;
       left: 500px;
       bottom: 100px;
+      @media screen and (max-width: 991px) {
+        left: 350px;
+      }
     }
     .bg {
       position: absolute;
-      left: -60px
+      left: -20px
     }
     .wath {
       position: absolute;
-      left: 100px;
-      @media screen and (max-width:820px) {
-        left: -70px;
+      left: 140px;
+      @media screen and (max-width: 991px) {
+        left: -10px;
       }
     }
     @media screen and (max-width: 360px) {

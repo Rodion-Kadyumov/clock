@@ -1,24 +1,22 @@
 .about {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 767px) {
     display: flex;
   }
   &__left {
     grid-column: 1/2;
     background: #F7F5EF;
     position: relative;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
     img {
       position: absolute;
       top: 50px;
       left: 170px;
-      @media screen and (max-width: 820px) {
-        width: 100%;
-        top: 40px;
-        left: 0;
+      @media screen and (max-width: 991px) {
+        display: none;
       }
     }
   }
@@ -26,7 +24,10 @@
     grid-column: 2/4;
     padding: 140px 290px;
     position: relative;
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 991px) {
+      padding: 100px 50px;
+    }
+    @media screen and (max-width: 767px) {
       padding: 30px;
     }
     h2 {
@@ -69,7 +70,7 @@
       }
     }
     img:last-child {
-      @media screen and (max-width: 820px) {
+      @media screen and (max-width: 991px) {
         display: none;
       }
     }
